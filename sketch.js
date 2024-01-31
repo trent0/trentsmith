@@ -1,26 +1,22 @@
 function setup() {
-  createCanvas(430,430);
+  createCanvas(400, 400);
+  black = color('000000')
 }
 
 function draw() {
-background(26,0,153);
-
-fill(0,153,0);
-stroke(255);
-strokeWeight(7);
-ellipse(215,215,225,225);
-
-fill(255,0,0)
-beginShape();
-vertex(330,180)
-vertex(250,180)
-vertex(220,95)
-vertex(180,180)
-vertex(100,180)
-vertex(165,235)
-vertex(140,305)
-vertex(215,265)
-vertex(290,305)
-vertex(265,235)
-endShape(CLOSE);
+  background(220);
+  fill(0, 0, 0, 225)
+  rect(100, 160, 180, 85);
+  noStroke();
+  fill("yellow");
+  arc(150, 200, 50, 50, 225, 135); 
+  fill("red");
+  rect(200, 200, 50, 25); 
+  ellipse(225, 200, 50, 50); 
+  fill("white");
+  ellipse(212, 195, 15, 15);
+  ellipse(238, 195, 15, 15);
+  fill("blue");
+  ellipse(238, 195, 10, 10);
+  ellipse(212, 195, 10, 10);
 }
